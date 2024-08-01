@@ -1,0 +1,56 @@
+/* Styles for OrganizerCard component */
+
+.card {
+    max-width: 20rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover .image {
+    transform: scale(1.05);
+  }
+  
+  .image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .details {
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity here */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .details {
+    opacity: 1;
+  }
+  
+  .name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: #fff;
+  }
+  
+  .icon:hover {
+    color: #f56565;
+  }
+  
